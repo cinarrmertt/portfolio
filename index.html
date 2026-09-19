@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="tr" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mustafa Mert Çınar | Portfolyo</title>
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-slate-950 text-slate-100 font-sans antialiased selection:bg-indigo-500 selection:text-white">
+
+  <!-- Navbar -->
+  <nav class="fixed top-0 w-full bg-slate-900/80 backdrop-blur-md border-b border-slate-800 z-50 px-6 py-4 flex justify-between items-center">
+    <a href="#" class="font-bold tracking-wider text-indigo-400 text-lg">MUSTAFA MERT ÇINAR</a>
+    <div class="space-x-6 text-sm font-medium">
+      <a href="#projeler" class="hover:text-indigo-400 transition">Projeler</a>
+      <a href="#mini-oyunlar" class="hover:text-emerald-400 transition">Mini Oyunlar</a>
+      <a href="#hakkimda" class="hover:text-indigo-400 transition">Hakkımda</a>
+      <a href="#iletisim" class="hover:text-indigo-400 transition">İletişim</a>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <header class="min-h-screen flex flex-col justify-center items-center text-center px-4 pt-16">
+    <div class="inline-block px-4 py-1.5 mb-6 text-xs font-semibold tracking-wider text-indigo-300 uppercase bg-indigo-950/60 rounded-full border border-indigo-800">
+      Game Developer & 3D Artist
+    </div>
+
+    <h1 class="text-4xl sm:text-6xl font-extrabold tracking-tight max-w-3xl leading-tight text-white">
+      Mustafa Mert Çınar
+    </h1>
+
+    <p class="mt-5 text-lg text-slate-400 max-w-2xl leading-relaxed">
+      Unity ve C# ile optimize oyun mekanikleri geliştiriyor; Blender ile 3D asset modelleme, rig süreçlerini yönetiyorum.
+    </p>
+
+    <div class="mt-8 flex flex-wrap justify-center gap-4">
+      <a href="#projeler" class="px-6 py-3 rounded-lg bg-indigo-600 hover:bg-indigo-500 text-white font-medium transition shadow-lg shadow-indigo-600/20">
+        Projeleri İncele
+      </a>
+      <a href="./cv.pdf" download="Mustafa_Mert_Cinar_CV.pdf" target="_blank" class="px-6 py-3 rounded-lg border border-slate-700 bg-slate-900/50 hover:bg-slate-800 text-slate-200 font-medium transition">
+        CV İndir (PDF)
+      </a>
+    </div>
+  </header>
+
+  <!-- Projeler Bölümü -->
+  <section id="projeler" class="py-24 px-6 max-w-6xl mx-auto space-y-24">
+    
+    <!-- 1. KATEGORİ: DEVELOPMENT PROJELERİ -->
+    <div>
+      <div class="mb-8">
+        <h2 class="text-3xl font-bold text-slate-100 border-l-4 border-indigo-500 pl-4">Development Projeleri</h2>
+        <p class="text-slate-400 mt-2 text-sm">Oynanış mekanikleri, sistem mimarileri ve GitHub üzerindeki açık kaynak kodlu çalışmalar.</p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+        
+        <!-- Dev Proje 1: Character Controller -->
+        <div class="bg-slate-900 border border-slate-800 rounded-2xl overflow-hidden hover:border-slate-700 transition flex flex-col justify-between p-6">
+          <div>
+            <div class="flex items-center justify-between mb-3">
+              <div class="flex flex-wrap gap-2">
+                <span class="text-xs px-2.5 py-1 rounded-md bg-slate-800 text-indigo-400 font-mono">Unity</span>
+                <span class="text-xs px-2.5 py-1 rounded-md bg-slate-800 text-indigo-400 font-mono">C#</span>
+              </div>
+              <span class="text-xs text-emerald-400 font-mono">● Public Repo</span>
+            </div>
+            
+            <h3 class="text-xl font-bold mb-2 text-slate-100">3D Character Controller & Camera</h3>
+            <p class="text-slate-400 text-sm leading-relaxed">
+              I wrote a character controller in Unity. I also used the input system. I designed the character myself.
+            </p>
+          </div>
+
+          <div class="mt-6 pt-4 border-t border-slate-800/80 flex items-center justify-between">
+            <span class="text-xs text-slate-500 font-mono">GitHub / cinarrmertt</span>
+            <a href="https://github.com/cinarrmertt/CharacterController" target="_blank" rel="noopener noreferrer" 
+               class="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-lg bg-slate-800 hover:bg-slate-700 text-slate-200 text-xs font-semibold transition">
+              <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/>
+              </svg>
+              <span>GitHub Deposu</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Dev Proje 2: Procedural Animation -->
+        <div class="bg-slate-900 border border-slate-800 rounded-2xl overflow-hidden hover:border-slate-700 transition flex flex-col justify-between p-6">
+          <div>
+            <div class="flex items-center justify-between mb-3">
+              <div class="flex flex-wrap gap-2">
+                <span class="text-xs px-2.5 py-1 rounded-md bg-slate-800 text-indigo-400 font-mono">Unity</span>
+                <span class="text-xs px-2.5 py-1 rounded-md bg-slate-800 text-indigo-400 font-mono">C#</span>
+                <span class="text-xs px-2.5 py-1 rounded-md bg-slate-800 text-indigo-400 font-mono">Inverse Kinematics (IK)</span>
+              </div>
+              <span class="text-xs text-emerald-400 font-mono">● Public Repo</span>
+            </div>
+            
+            <h3 class="text-xl font-bold mb-2 text-slate-100">Procedural Animation System</h3>
+            <p class="text-slate-400 text-sm leading-relaxed">
+              Procedural Environment Interactions
+            </p>
+          </div>
+
+          <div class="mt-6 pt-4 border-t border-slate-800/80 flex items-center justify-between">
+            <span class="text-xs text-slate-500 font-mono">GitHub / cinarrmertt</span>
+            <a href="https://github.com/cinarrmertt/ProceduralAnimation" target="_blank" rel="noopener noreferrer" 
+               class="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-lg bg-slate-800 hover:bg-slate-700 text-slate-200 text-xs font-semibold transition">
+              <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/>
+              </svg>
+              <span>GitHub Deposu</span>
+            </a>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Tüm Development Projeleri Butonu -->
+      <div class="mt-10 text-center">
+        <a href="dev.html" 
+           class="inline-flex items-center gap-2 px-8 py-3.5 rounded-xl border border-indigo-500/40 bg-indigo-950/30 hover:bg-indigo-600 hover:border-indigo-600 text-indigo-300 hover:text-white font-medium transition duration-300 shadow-lg shadow-indigo-950/40">
+          <span>Tüm Development Projelerini Gör</span>
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/>
+          </svg>
+        </a>
+      </div>
+    </div>
+
+    <!-- 2. KATEGORİ: ART & 3D PROJELERİ -->
+    <div>
+      <div class="mb-8">
+        <h2 class="text-3xl font-bold text-slate-100 border-l-4 border-indigo-500 pl-4">Art & 3D Projeleri</h2>
+        <p class="text-slate-400 mt-2 text-sm">3D modelleme, rig, low-poly tasarımlar ve konsept çalışmaları.</p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+        
+        <!-- Art Proje 1: Ferrari F1 3D Model -->
+        <div class="bg-slate-900 border border-slate-800 rounded-2xl overflow-hidden hover:border-slate-700 transition flex flex-col group">
+          <div class="h-60 w-full bg-slate-950 overflow-hidden border-b border-slate-800 relative">
+            <img src="./ferrari.webp" 
+                 alt="Scuderia Ferrari F1 3D Araç Modeli" 
+                 class="w-full h-full object-cover group-hover:scale-105 transition duration-500 ease-out">
+          </div>
+          <div class="p-6 flex-1 flex flex-col justify-between">
+            <div>
+              <div class="flex flex-wrap gap-2 mb-3">
+                <span class="text-xs px-2.5 py-1 rounded-md bg-slate-800 text-indigo-400 font-mono">Hard-Surface</span>
+                <span class="text-xs px-2.5 py-1 rounded-md bg-slate-800 text-indigo-400 font-mono">Lighting & Shading</span>
+              </div>
+              <h3 class="text-xl font-bold mb-2 text-slate-100">Scuderia Ferrari F1 Araç Modelleme</h3>
+              <p class="text-slate-400 text-sm leading-relaxed">
+                Blender kullanılarak modellenen hard-surface F1 yarış aracı.
+              </p>
+            </div>
+            <div class="mt-6 flex items-center gap-4 text-sm font-medium pt-4 border-t border-slate-800/60">
+              <a href="#" class="text-indigo-400 hover:text-indigo-300 transition">Render Detayları &rarr;</a>
+              <a href="https://www.artstation.com/artwork/vz1oEv" target="_blank" rel="noopener noreferrer" class="text-slate-400 hover:text-white transition">ArtStation</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Art Proje 2: Stylized Wizard Karakter -->
+        <div class="bg-slate-900 border border-slate-800 rounded-2xl overflow-hidden hover:border-slate-700 transition flex flex-col group">
+          <div class="h-60 w-full bg-slate-950 overflow-hidden border-b border-slate-800 relative">
+            <img src="./wizard.webp" 
+                 alt="Stylized Wizard 3D Karakter" 
+                 class="w-full h-full object-cover group-hover:scale-105 transition duration-500 ease-out">
+          </div>
+          <div class="p-6 flex-1 flex flex-col justify-between">
+            <div>
+              <div class="flex flex-wrap gap-2 mb-3">
+                <span class="text-xs px-2.5 py-1 rounded-md bg-slate-800 text-indigo-400 font-mono">Stylized Character</span>
+                <span class="text-xs px-2.5 py-1 rounded-md bg-slate-800 text-indigo-400 font-mono">Game-Ready</span>
+              </div>
+              <h3 class="text-xl font-bold mb-2 text-slate-100">Stylized Büyücü Karakter Modelleme</h3>
+              <p class="text-slate-400 text-sm leading-relaxed">
+                Blender'da modellenmiş stilize büyücü (wizard) karakter tasarımı. Temiz topoloji, minimal renk paleti ve animasyon/rig altyapısına uygun.
+              </p>
+            </div>
+            <div class="mt-6 flex items-center gap-4 text-sm font-medium pt-4 border-t border-slate-800/60">
+              <a href="#" class="text-indigo-400 hover:text-indigo-300 transition">Render İncele &rarr;</a>
+              <a href="https://www.artstation.com/artwork/O3qJgJ" target="_blank" rel="noopener noreferrer" class="text-slate-400 hover:text-white transition">ArtStation</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Tüm Art Projeleri Butonu -->
+      <div class="mt-10 text-center">
+        <a href="art.html" 
+           class="inline-flex items-center gap-2 px-8 py-3.5 rounded-xl border border-indigo-500/40 bg-indigo-950/30 hover:bg-indigo-600 hover:border-indigo-600 text-indigo-300 hover:text-white font-medium transition duration-300 shadow-lg shadow-indigo-950/40">
+          <span>Tüm Art & 3D Projelerini Gör</span>
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/>
+          </svg>
+        </a>
+      </div>
+    </div>
+
+  </section>
+
+  <!-- Mini Oyunlar & İnteraktif Oynanabilir Vitrin -->
+  <section id="mini-oyunlar" class="py-20 px-6 max-w-6xl mx-auto border-t border-slate-800/80">
+    <div class="mb-10">
+      <div class="inline-block px-3 py-1 mb-3 text-xs font-semibold tracking-wider text-emerald-400 uppercase bg-emerald-950/40 rounded-full border border-emerald-800/60">
+        Playable WebGL & Prototipler
+      </div>
+      <h2 class="text-3xl font-bold text-slate-100 border-l-4 border-emerald-500 pl-4">Mini Oyunlar</h2>
+      <p class="text-slate-400 mt-2 text-sm">Doğrudan tarayıcıda oynanabilir Unity WebGL projeleri ve mekanik prototipleri.</p>
+    </div>
+
+    <!-- Oyun Konsolu Penceresi -->
+    <div class="bg-slate-900/90 border border-slate-800 rounded-2xl overflow-hidden shadow-2xl">
+      
+      <!-- Pencere Üst Çubuğu -->
+      <div class="bg-slate-950 px-4 py-3 border-b border-slate-800 flex items-center justify-between">
+        <div class="flex items-center gap-2">
+          <span class="w-3 h-3 rounded-full bg-rose-500/80 inline-block"></span>
+          <span class="w-3 h-3 rounded-full bg-amber-500/80 inline-block"></span>
+          <span class="w-3 h-3 rounded-full bg-emerald-500/80 inline-block"></span>
+          <span class="ml-2 text-xs font-mono text-slate-300">unity_playable_hub.exe</span>
+        </div>
+        <span class="text-[11px] text-emerald-400 font-mono hidden sm:inline-block">● 3 Canlı WebGL Oyunu</span>
+      </div>
+
+      <!-- OYNANABİLİR OYUNLAR (3'lü Kart Izgarası) -->
+      <div class="p-6 sm:p-8 bg-slate-950/60 border-b border-slate-800 grid grid-cols-1 md:grid-cols-3 gap-6">
+        
+        <!-- Oyun 1: Runner Game -->
+        <div class="bg-slate-900/80 border border-slate-800 rounded-xl p-5 flex flex-col justify-between hover:border-emerald-500/50 transition duration-300 group relative overflow-hidden">
+          <div class="absolute inset-0 bg-gradient-to-br from-emerald-500/5 to-transparent pointer-events-none"></div>
+          <div class="relative z-10">
+            <div class="flex items-center justify-between mb-3">
+              <span class="text-[10px] px-2 py-0.5 rounded bg-emerald-950/60 text-emerald-400 border border-emerald-900/60 font-mono">WebGL</span>
+              <span class="text-[10px] text-slate-500 font-mono">v1.0</span>
+            </div>
+            <h3 class="text-lg font-bold text-slate-100 group-hover:text-emerald-300 transition">Runner Game</h3>
+            <p class="text-slate-400 text-xs mt-2 leading-relaxed">
+              Refleks ve dinamik engel kaçış mekaniğine dayalı sonsuz koşu prototipi.
+            </p>
+          </div>
+          <div class="relative z-10 mt-5 pt-3 border-t border-slate-800/80 flex items-center justify-between">
+            <span class="text-[11px] text-indigo-400 font-mono">C#</span>
+            <a href="https://play.unity.com/tr/games/41a120d4-d507-4839-b797-ee6ac8146043/runner-game" 
+               target="_blank" 
+               rel="noopener noreferrer" 
+               class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-emerald-500 hover:bg-emerald-400 text-slate-950 font-bold text-xs transition duration-200 shadow-md shadow-emerald-500/10">
+              <span>Oyna</span>
+              <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Oyun 2: Animal Feeding Game -->
+        <div class="bg-slate-900/80 border border-slate-800 rounded-xl p-5 flex flex-col justify-between hover:border-emerald-500/50 transition duration-300 group relative overflow-hidden">
+          <div class="absolute inset-0 bg-gradient-to-br from-emerald-500/5 to-transparent pointer-events-none"></div>
+          <div class="relative z-10">
+            <div class="flex items-center justify-between mb-3">
+              <span class="text-[10px] px-2 py-0.5 rounded bg-emerald-950/60 text-emerald-400 border border-emerald-900/60 font-mono">WebGL</span>
+              <span class="text-[10px] text-slate-500 font-mono">v1.0</span>
+            </div>
+            <h3 class="text-lg font-bold text-slate-100 group-hover:text-emerald-300 transition">Animal Feeding Game</h3>
+            <p class="text-slate-400 text-xs mt-2 leading-relaxed">
+              Mermi fırlatma, trigger çarpışma mekanikleri ve hedef odaklı hayvan besleme dinamikleri.
+            </p>
+          </div>
+          <div class="relative z-10 mt-5 pt-3 border-t border-slate-800/80 flex items-center justify-between">
+            <span class="text-[11px] text-indigo-400 font-mono">C#</span>
+            <a href="https://play.unity.com/tr/games/172bd470-87fb-4c21-9e85-b01398bc80a4/animal-feeding-game" 
+               target="_blank" 
+               rel="noopener noreferrer" 
+               class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-emerald-500 hover:bg-emerald-400 text-slate-950 font-bold text-xs transition duration-200 shadow-md shadow-emerald-500/10">
+              <span>Oyna</span>
+              <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Oyun 3: Pixelart Blackjack -->
+        <div class="bg-slate-900/80 border border-slate-800 rounded-xl p-5 flex flex-col justify-between hover:border-emerald-500/50 transition duration-300 group relative overflow-hidden">
+          <div class="absolute inset-0 bg-gradient-to-br from-emerald-500/5 to-transparent pointer-events-none"></div>
+          <div class="relative z-10">
+            <div class="flex items-center justify-between mb-3">
+              <span class="text-[10px] px-2 py-0.5 rounded bg-emerald-950/60 text-emerald-400 border border-emerald-900/60 font-mono">WebGL / 2D</span>
+              <span class="text-[10px] text-slate-500 font-mono">v1.0</span>
+            </div>
+            <h3 class="text-lg font-bold text-slate-100 group-hover:text-emerald-300 transition">Pixelart Blackjack</h3>
+            <p class="text-slate-400 text-xs mt-2 leading-relaxed">
+              2D piksel kart dağıtma, deste algoritması, el puanlama ve yapay zeka krupiye mantığı.
+            </p>
+          </div>
+          <div class="relative z-10 mt-5 pt-3 border-t border-slate-800/80 flex items-center justify-between">
+            <span class="text-[11px] text-indigo-400 font-mono">C# / AI</span>
+            <a href="https://play.unity.com/tr/games/590ce13c-3d94-44de-9efe-0f62ad2aa936/pixelart-blackjack" 
+               target="_blank" 
+               rel="noopener noreferrer" 
+               class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-emerald-500 hover:bg-emerald-400 text-slate-950 font-bold text-xs transition duration-200 shadow-md shadow-emerald-500/10">
+              <span>Oyna</span>
+              <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Oyun 4: WebGL Build Prototipi -->
+        <div class="bg-slate-900/80 border border-slate-800 rounded-xl p-5 flex flex-col justify-between hover:border-emerald-500/50 transition duration-300 group relative overflow-hidden">
+          <div class="absolute inset-0 bg-gradient-to-br from-emerald-500/5 to-transparent pointer-events-none"></div>
+          <div class="relative z-10">
+            <div class="flex items-center justify-between mb-3">
+              <span class="text-[10px] px-2 py-0.5 rounded bg-emerald-950/60 text-emerald-400 border border-emerald-900/60 font-mono">WebGL Demo</span>
+              <span class="text-[10px] text-slate-500 font-mono">v1.0</span>
+            </div>
+            <h3 class="text-lg font-bold text-slate-100 group-hover:text-emerald-300 transition">Case Work Project</h3>
+            <p class="text-slate-400 text-xs mt-2 leading-relaxed">
+              I developed case work for Good Job Games
+            </p>
+          </div>
+          <div class="relative z-10 mt-5 pt-3 border-t border-slate-800/80 flex items-center justify-between">
+            <span class="text-[11px] text-indigo-400 font-mono">Unity Play</span>
+            <a href="https://play.unity.com/en/games/d5326b1e-e24e-40ed-bb23-e252b2b17f03/webgl-builds" 
+               target="_blank" 
+               rel="noopener noreferrer" 
+               class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-emerald-500 hover:bg-emerald-400 text-slate-950 font-bold text-xs transition duration-200 shadow-md shadow-emerald-500/10">
+              <span>Oyna</span>
+              <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+
+  </section>
+  
+  <!-- Hakkımda Bölümü -->
+  <section id="hakkimda" class="py-24 px-6 border-t border-slate-800 bg-slate-900/30">
+    <div class="max-w-4xl mx-auto">
+      <h2 class="text-3xl font-bold text-slate-100 border-l-4 border-indigo-500 pl-4 mb-8">Hakkımda</h2>
+      <div class="text-slate-300 space-y-4 leading-relaxed text-base">
+        <p>
+          Dijital Oyun Tasarımı disipliniyle oyun geliştirme, sistem tasarımı ve teknik mekanik prototipleme alanlarında çalışıyorum. Projelerimde temiz kod yapısı (SOLID), modüler mimari ve performans odaklı optimizasyonu ön planda tutuyorum.
+        </p>
+        <p>
+          Unity ve C# ile mekanik tasarımı, Blender ve 2D/3D tasarım araçlarıyla kendimi geliştirmeye odaklanıyorum.
+        </p>
+      </div>
+
+      <!-- Yetkinlikler Tablosu / Etiketler -->
+      <div class="mt-10 grid grid-cols-1 sm:grid-cols-3 gap-6">
+        <div class="p-5 rounded-xl bg-slate-900 border border-slate-800">
+          <h4 class="font-bold text-indigo-400 mb-2">Motorlar & Diller</h4>
+          <p class="text-sm text-slate-400">Unity, Unreal Engine temelleri, C#, C++</p>
+        </div>
+        <div class="p-5 rounded-xl bg-slate-900 border border-slate-800">
+          <h4 class="font-bold text-indigo-400 mb-2">3D & Tasarım</h4>
+          <p class="text-sm text-slate-400">Blender, Adobe Photoshop, Illustrator</p>
+        </div>
+        <div class="p-5 rounded-xl bg-slate-900 border border-slate-800">
+          <h4 class="font-bold text-indigo-400 mb-2">Mimariler & Araçlar</h4>
+          <p class="text-sm text-slate-400">State Machine, Object Pooling, Git / GitHub</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- İletişim / Footer -->
+  <footer id="iletisim" class="border-t border-slate-800 py-20 text-center text-slate-400 text-sm bg-slate-950">
+    <div class="max-w-4xl mx-auto px-6">
+      <h2 class="text-3xl font-bold text-slate-100 mb-3">İletişime Geçin</h2>
+      <p class="mb-8 text-slate-400 max-w-md mx-auto">
+        Oyun geliştirme pozisyonları, staj veya projeler hakkında konuşmak için bana ulaşabilirsiniz.
+      </p>
+
+      <!-- Butonlar / Bağlantılar -->
+      <div class="flex flex-wrap justify-center gap-4 mb-12 font-medium">
+        <a href="https://mail.google.com/mail/?view=cm&fs=1&to=ccinar.mertt@gmail.com" 
+           target="_blank" 
+           rel="noopener noreferrer"
+           class="inline-flex items-center gap-2 px-6 py-3 rounded-lg bg-indigo-600 hover:bg-indigo-500 text-white transition shadow-lg shadow-indigo-600/20">
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
+          </svg>
+          <span>E-posta Gönder</span>
+        </a>
+
+        <a href="https://www.linkedin.com/in/mustafa-mert-%C3%A7%C4%B1nar-81324329a/" 
+           target="_blank" 
+           rel="noopener noreferrer" 
+           class="inline-flex items-center gap-2 px-6 py-3 rounded-lg bg-slate-900 border border-slate-800 hover:border-slate-700 hover:text-white transition">
+          <span>LinkedIn</span>
+        </a>
+
+        <a href="https://github.com/cinarrmertt" 
+           target="_blank" 
+           rel="noopener noreferrer" 
+           class="inline-flex items-center gap-2 px-6 py-3 rounded-lg bg-slate-900 border border-slate-800 hover:border-slate-700 hover:text-white transition">
+          <span>GitHub</span>
+        </a>
+      </div>
+
+      <p class="text-xs text-slate-600">
+        &copy; 2026 Mustafa Mert Çınar. Tüm hakları saklıdır.
+      </p>
+    </div>
+  </footer>
+
+</body>
+</html>
